@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>My Trips</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only [navPush]="newtripsPage">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+  <button ion-item  [navPush]="tripsPage"> 
+    Doi Chang
+  </button>  
+  <button ion-item  (click)="itemSelected()">
+    Doi Tung
+  </button>  
+  <button ion-item  (click)="itemSelected()">
+    Phu Chi Fah
+  </button>     
+</ion-list>
+ 
+</ion-content>
+
+
+
